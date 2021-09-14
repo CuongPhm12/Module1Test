@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng cho trước
+(Giả sử tất cả các phần tử trong mảng không giống nhau). Hàm có 2 tham số: số phần tử cần tìm, mảng cho trước.-->
+<!--Viết chương trình với một mảng số nguyên được khởi tạo trước.
+Nhập vào một giá trị bất kỳ, sau đó kiểm tra xem giá trị số nguyên bất kỳ vừa nhập có nằm trong mảng đã nhập hay không.-->
+<script>
+    let array = [4,8,12,98,11,5,66,32];
+    let num = prompt("input num");
+    num = parseInt(num);
+    function checkNum(){
+        let index = -1;
+        for (let i = 0; i < array.length; i++) {
+            if(array[i]==num){
+                index = i;
+                break;
+            }
+        }
+        if(index==-1){
+            document.write(num + " không nằm trong mảng");
+        }else{
+        document.write(num + "nằm ở vị trí thứ "+ index + " trong mảng");
+        }
+    }
+    checkNum();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm đếm số ký tự nguyên âm trong một chuỗi cho trước. Hàm có 1 tham số truyền vào mà một mảng các ký tự.
+Hàm trả về false nếu không có ký tự nguyên âm nào.-->
+<!--Viết chương trình nhập vào một chuỗi bất kỳ. Gọi hàm tìm số ký tự nguyên âm vừa xây dựng ở trên.-->
+<!--Nguyên âm là các ký tự: a, o, e, u, i-->
+<script>
+    let array = prompt("input anything");
+    let n = array.length;
+    function checkVowel(){
+        let count = 0;
+        let index = -1;
+        for (let i = 0; i <n; i++) {
+            if(array[i]=='a'||array[i]=='o'||array[i]=='e'||array[i]=='u'||array[i]=='i'){
+                count++;
+                index = i;
+            }
+        }
+        if (index == -1){
+            document.write("No vowel in the array.")
+            return false;
+
+        }else{
+            document.write("The array have " + count + " vowels");
+        }
+    }
+    checkVowel();
+</script>
+
+</body>
+</html>

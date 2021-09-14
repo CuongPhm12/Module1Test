@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số nguyên a, b. -->
+<!--Hàm trả về nghiệm của phương trình theo tham số đã cho.-->
+<!--Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất với hệ số a = 5; b = 8.-->
+<script>
+    let a = prompt("input a");
+    let b = prompt("input b");
+    a = parseInt(a);
+    b = parseInt(b);
+    function solveEquation(){
+        if(a==0){
+            document.write("Phương trình vô nghiệm");
+        }else{
+            document.write("Phương trình có 1 ngiệm duy nhất là "+ -b/a)
+        }
+    }
+    solveEquation()
+</script>
+
+</body>
+</html>
